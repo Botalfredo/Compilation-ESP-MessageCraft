@@ -74,9 +74,12 @@ message :
 ### Unit declaration
 Units participating in the message are declared in the first part of the message. These units can adopt one of the following three roles:
 
+| Message   | Description                                                                     |
+|-----------|---------------------------------------------------------------------------------|
 | broadcast | The unit sends the message to all other units capable of receiving the message. |
 | sender    | The unit sends the message exclusively to units designated as **listener**.     |
 | listener  | The unit receives the message, whether broadcast or sent by a sender.           |
+
 In each message, there can only be one **sender** or **broadcast**.
 
 ### Message name
