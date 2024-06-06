@@ -64,24 +64,22 @@ message :
 ```
 # Details of Message Parts
 
-| Parts | Function |
+| Parties                   | Fonction                                                                                        |
 |---------------------------|-------------------------------------------------------------------------------------------------|
-| Each unit is declared with its name and can have one of three values: broadcast, sender or listener.
-| The message name is mandatory and must be free of spaces, accents or special characters.
-| Variables are defined in the last part of the message.
-
+| **unit declarations** | Each unit is declared with its name and can have one of three values: broadcast, sender or listener. |
+| Message name            | The message name is mandatory and must be free of spaces, accents or special characters.                                                              |
+| Message variable       | Variables are defined in the last part of the message.  
 
 
 ### Unit declaration
 Units participating in the message are declared in the first part of the message. These units can adopt one of the following three roles:
 
-| Keyword | Description |
 |-----------|----------------------------------------------------------------------------------------------------------------------|
-| broadcast | The unit sends the message to all other units capable of receiving it. | sender | The unit sends the message to all other units capable of receiving it.
-| The unit sends the message exclusively to units designated as **listener**.  | 
-| The unit receives the message, whether it is broadcast or sent by a sender.
+| broadcast | The unit sends the message to all other units capable of receiving the message.        |
+| sender    | The unit sends the message exclusively to units designated as **listener**.  | 
+| listener    | The unit receives the message, whether broadcast or sent by a sender.                   |
 
-In each message, there can be only one **sender** or **broadcast**.
+In each message, there can only be one **sender** or **broadcast**.
 
 ### Message name
 The message must have a name. The name cannot contain spaces, accents or special characters.
