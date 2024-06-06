@@ -77,7 +77,7 @@ Units participating in the message are declared in the first part of the message
 |-----------|----------------------------------------------------------------------------------------------------------------------|
 | broadcast | The unit sends the message to all other units capable of receiving the message.        |
 | sender    | The unit sends the message exclusively to units designated as **listener**.  | 
-| listener    | The unit receives the message, whether broadcast or sent by a sender.                   |
+| listener    | The unit receives the message, whether broadcast or sent by a sender.                 |
 
 In each message, there can only be one **sender** or **broadcast**.
 
